@@ -9,6 +9,9 @@ body > header,
     // @extend %brand-background;
     background-color: white !important;
     .top-bar-title {
+      @include breakpoint(small only) {
+        text-align: right;
+      }
       flex-grow: 1;
       img {
         max-width: 200px;
@@ -94,7 +97,11 @@ body > header,
 
   .input-group {
     padding-top: $line-height / 4;
-
+    @include breakpoint(small only) {
+      label {
+        width: 100%;
+      }
+    }
     @include breakpoint(medium) {
       margin-bottom: 0;
     }
@@ -139,5 +146,34 @@ body > header,
   h2,
   p {
     color: $brand;
+  }
+}
+
+#responsive-menu {
+  @include breakpoint(small only) {
+    width: 100%;
+    a {
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  border-top: 2px solid $brand;
+  background: white;
+
+  .logos {
+    ul {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        max-width: 200px;
+      }
+    }
   }
 }
