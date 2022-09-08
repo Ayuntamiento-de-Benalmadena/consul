@@ -1,0 +1,7 @@
+<% if feature?(:sdg) %>
+  <%= render SDG::Goals::IndexComponent.new(@sdg_goals, header: @sdg_header, phases: @phases) %>
+  <br><br>
+<% end %>
+<% if feature?(:aue) %>
+  <%= render AUE::Goals::IndexComponent.new(@aue_goals, header: @aue_header) %>
+<% end %>

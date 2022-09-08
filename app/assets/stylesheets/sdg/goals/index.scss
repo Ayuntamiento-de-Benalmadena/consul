@@ -14,6 +14,7 @@
 
         background: image-url("sdg.svg");
         content: "";
+        margin-right: 16px;
         display: inline-block;
         height: 1.5em;
         width: 1.5em;
@@ -44,7 +45,6 @@
   }
 
   .sdg-phase {
-
     .cards-container {
       @include grid-row-nest;
     }
