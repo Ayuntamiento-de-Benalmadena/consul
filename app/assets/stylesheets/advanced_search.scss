@@ -4,6 +4,10 @@
   flex-direction: column;
 
   @include breakpoint(large) {
+    .general-search {
+      @include grid-column;
+      width: 66%;
+    }
     .filter {
       @include grid-column;
       width: 33%;
