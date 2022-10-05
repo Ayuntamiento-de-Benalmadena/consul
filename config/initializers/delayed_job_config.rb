@@ -14,3 +14,10 @@ Delayed::Worker.read_ahead = 10
 Delayed::Worker.default_queue_name = "default"
 Delayed::Worker.raise_signal_exceptions = :term
 Delayed::Worker.logger = Logger.new(File.join(Rails.root, "log", "delayed_job.log"))
+
+Delayed::Worker.lifecycle.before :perform do
+  puts 'TEST!'
+  if !ActiveRecord::Base.connection.active?
+    establish_connection ActiveRecord::Base.configurations["#{Rails.env}"]
+  end
+end
