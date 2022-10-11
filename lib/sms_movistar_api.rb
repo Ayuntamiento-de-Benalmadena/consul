@@ -1,5 +1,5 @@
 require "xmlrpc/client"
-class MensajeriaMovistarApi
+class SMSMovistarApi
   attr_accessor :client
 
   def initialize

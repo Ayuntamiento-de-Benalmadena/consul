@@ -29,7 +29,7 @@ class Verification::Sms
   end
 
   def send_sms
-    MensajeriaMovistarApi.new.sms_deliver(user.unconfirmed_phone, user.sms_confirmation_code)
+    SMSMovistarApi.new.sms_deliver(user.unconfirmed_phone, user.sms_confirmation_code)
   end
 
   private
