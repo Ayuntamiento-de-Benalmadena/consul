@@ -1,0 +1,4 @@
+en:
+  verification:
+    sms:
+      message: "Verification code: %{code}. Benalmadena Participa."

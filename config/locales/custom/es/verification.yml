@@ -1,0 +1,4 @@
+es:
+  verification:
+    sms:
+      message: "Clave para verificarte: %{code}. Benalmadena Participa."
