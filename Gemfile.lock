@@ -678,6 +678,8 @@ GEM
     wicked_pdf (2.1.0)
       activesupport
     wkhtmltopdf-binary (0.12.6.5)
+    xmlrpc (0.3.2)
+      webrick
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -786,6 +788,7 @@ DEPENDENCIES
   whenever (~> 1.0.0)
   wicked_pdf (~> 2.1.0)
   wkhtmltopdf-binary (~> 0.12.6)
+  xmlrpc
 
 BUNDLED WITH
    2.1.4
