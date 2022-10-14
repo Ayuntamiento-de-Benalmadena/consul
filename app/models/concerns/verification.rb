@@ -27,9 +27,7 @@ module Verification
   end
 
   def verification_letter_sent?
-    return true if skip_verification?
-
-    letter_requested_at.present? && letter_verification_code.present?
+    return true
   end
 
   def residence_verified?
