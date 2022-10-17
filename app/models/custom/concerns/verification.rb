@@ -8,6 +8,8 @@ module Verification
   end
 
   def level_three_verified?
-    return true
+    return true if skip_verification?
+
+    level_two_verified_at.present? || (residence_verified? && sms_verified?)
   end
 end
