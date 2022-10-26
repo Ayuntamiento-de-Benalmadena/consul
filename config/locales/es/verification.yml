@@ -30,7 +30,7 @@ es:
         go_to_index: Ver propuestas
         office: Verificarte presencialmente en cualquier Oficina de Atención al Ciudadano
         send_letter: Solicitar una carta por correo postal
-        title: '¡Felicidades!'
+        title: "¡Felicidades!"
         user_permission_info: Con tu cuenta ya puedes...
       update:
         flash:
@@ -68,7 +68,7 @@ es:
           success: Introduce el código de confirmación que te hemos enviado por mensaje de texto
       edit:
         resend_sms_link: Solicitar un nuevo código
-        resend_sms_text: '¿No has recibido un mensaje de texto con tu código de confirmación?'
+        resend_sms_text: "¿No has recibido un mensaje de texto con tu código de confirmación?"
         submit_button: Enviar
         title: SMS de confirmación
       new:
@@ -91,7 +91,7 @@ es:
     user_permission_info: Al verificar tus datos podrás...
     user_permission_proposal: Crear nuevas propuestas
     user_permission_support_proposal: Apoyar propuestas
-    user_permission_votes: Votar proyectos en los presupuestos participativos
+    user_permission_votes: Votar proyectos
     verified_user:
       form:
         submit_button: Enviar código
